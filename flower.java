@@ -9,12 +9,9 @@ public class flower extends Thread
 	public static void main(String[] args) 
 	{
 		CreateFlowers newFlower= new CreateFlowers();
-		DerpalArt f1 = new DerpalArt();
-		f1.setTitle("Pick a flower");
-		f1.setBounds(100,100,500,500);
-		f1.setVisible(true);
-		GreenHouse();
+		newFlower.runPicker();
 		time= newFlower.getTime();
+		GreenHouse();
 	}
 	public static void GreenHouse()
 	{
